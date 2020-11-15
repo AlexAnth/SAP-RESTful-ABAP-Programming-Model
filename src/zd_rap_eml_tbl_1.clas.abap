@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zd_rap_eml_tbl_1 IMPLEMENTATION.
+CLASS ZD_RAP_EML_TBL_1 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     " step 1 Read
     read entities of ZI_RAP_Travel_TBL_1
@@ -21,5 +23,4 @@ CLASS zd_rap_eml_tbl_1 IMPLEMENTATION.
     result data(travels).
     out->write( travels ).
   ENDMETHOD.
-
 ENDCLASS.
